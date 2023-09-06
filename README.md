@@ -79,7 +79,7 @@ r6
 r7
 
 
-Funciones relacionadas con digital I/O
+Funciones relacionadas con I/O
 ======================================
 
 e(int pin);
