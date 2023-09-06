@@ -1,11 +1,12 @@
 # Controlador_Vergatario
+
 Repositorio Oficial del Controlador Vergatario, desarrollado por el Centro de Desarrollo Tecnologico de Paraguana, conformado por las empresas Venezolana  de Telecomunicaciones CA (Vtelca), Venezolana de Industrias Tecnologica (VIT) y Orinoquia CA. En este archivo podras encontrar todas las funciones para la programacion del controlador Vergatario.
 
 A continuacion, la descripcion de puertos del Controlador, esta misma esta de forma automatica al ejecutar
 la funcion "puertos()" en el IDE:
 
 ENTRADAS DIGITALES  
-==================
+-
 in0 
 in1 
 in2 
@@ -32,26 +33,26 @@ in22
 in23
 
 ENTRADAS ANALOGICAS DE CORRIENTE
-================================
+-
 i0 
 i1 
 
 ENTRADAS ANALOGICAS DE VOLTAJE
-==============================
+-
 v0 
 v1
 v2 
 v3 
 
 SWITCHES DE CONTROL INTEGRADOS
-==============================
+-
 dip0
 dip1
 dip2
 dip3
 
 SALIDAS DIGITALES
-=================
+-
 q0
 q1
 q2
@@ -62,12 +63,12 @@ q6
 q7
 
 SALIDAS DE PWM
-==============
+-
 p0
 p1
 
 SALIDAS A RELE
-==============
+-
 r0
 r1
 r2
