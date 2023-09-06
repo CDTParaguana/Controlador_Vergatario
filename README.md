@@ -108,7 +108,7 @@ leer(int pin);
 -
 Lee y muestra el valor de un pin digital.
 
-Puertos();
+puertos();
 -
 Configura todos los pines de entrada y salida del controlador para su respectivo uso
 Nota: Esta función debe ser llamada en la función setup() para habilitar
