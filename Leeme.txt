@@ -100,8 +100,8 @@ off(int pin);
 Apaga un pin digital(Debe seleccionar un pin).
 
 escribir(int pin, bool value);
-Par·metros:
- - pin: El n˙mero del pin de salida Digital.
+Par√°metros:
+ - pin: El n√∫mero del pin de salida Digital.
  - value: Valor digital (HIGH o LOW) en un pin.
 
 leer(int pin);
@@ -109,7 +109,7 @@ Lee y muestra el valor de un pin digital.
 
 Puertos()
 Configura todos los pines de entrada y salida del controlador para su respectivo uso
-Nota: Esta funciÛn debe ser llamada en la funciÛn setup() para habilitar
+Nota: Esta funci√≥n debe ser llamada en la funci√≥n setup() para habilitar
 
 
 
@@ -117,26 +117,27 @@ Funciones relacionadas con Analog I/O
 --------------------------------------
 
 leerA(int pin);
-Lee el valor de una entrada analÛgica(Debe seleccionar un pin).
-Retorna: El valor leÌdo de la entrada analÛgica.
+Lee el valor de una entrada anal√≥gica(Debe seleccionar un pin).
+Retorna: El valor le√≠do de la entrada anal√≥gica.
 
 
 referenciaA(int type);
-Establece la referencia de voltaje para las conversiones analÛgicas.
-Par·metros:
+Establece la referencia de voltaje para las conversiones anal√≥gicas.
+Par√°metros:
   - type: El tipo de referencia (DEFAULT, INTERNAL, INTERNAL1V1, INTERNAL2V56, EXTERNAL).
 
   
 pwm(int pin, int valor);
-Escribe un valor analÛgico (0-255) en un pin de salida analÛgica (PWM).
-Par·metros:
-  - pin: El n˙mero del pin de salida analÛgica.
-  - valor: El valor analÛgico a escribir (0-255).
+Escribe un valor anal√≥gico (0-255) en un pin de salida anal√≥gica (PWM).
+Par√°metros:
+  - pin: El n√∫mero del pin de salida anal√≥gica.
+  - valor: El valor anal√≥gico a escribir (0-255).
 
 
-initSerial();
-Inicializa la comunicaciÛn serial para la comunicaciÛn con el puerto serial.
-Nota: Esta funciÛn debe ser llamada en la funciÛn setup() para habilitar la comunicaciÛn serial.
+initSerial(int frecuencia);
+Inicializa la comunicaci√≥n serial para la comunicaci√≥n con el puerto serial.
+Nota: Esta funci√≥n debe ser llamada en la funci√≥n setup() para habilitar la comunicaci√≥n serial y debe
+seleccionar una frecuencia.
 
 
 pintar();
@@ -153,92 +154,92 @@ Funciones relacionadas con el tiempo
 
 retraso(unsigned long milisegundos);
 Genera un retraso en milisegundos.
-Par·metros:
-  - milisegundos: La duraciÛn del retraso en milisegundos.
+Par√°metros:
+  - milisegundos: La duraci√≥n del retraso en milisegundos.
 
 
 
 retrasoSe(int seconds);
 Genera un retraso en segundos.
-Par·metros:
-  - seconds: La duraciÛn del retraso en segundos.
+Par√°metros:
+  - seconds: La duraci√≥n del retraso en segundos.
 
 
 
 retrasoMili(unsigned long valor);
 Genera un retraso en microsegundos.
-Par·metros:
-  - valor: La duraciÛn del retraso en microsegundos.
+Par√°metros:
+  - valor: La duraci√≥n del retraso en microsegundos.
 
 
 
 microSegundos();
-Retorna el n˙mero de microsegundos desde que comenzÛ la ejecuciÛn del programa.
-Retorna: El n˙mero de microsegundos transcurridos.
+Retorna el n√∫mero de microsegundos desde que comenz√≥ la ejecuci√≥n del programa.
+Retorna: El n√∫mero de microsegundos transcurridos.
 
 
 
 miliSegundos();
-Retorna el n˙mero de milisegundos desde que comenzÛ la ejecuciÛn del programa.
-Retorna: El n˙mero de milisegundos transcurridos.
+Retorna el n√∫mero de milisegundos desde que comenz√≥ la ejecuci√≥n del programa.
+Retorna: El n√∫mero de milisegundos transcurridos.
 
 
 
 
-Funciones matem·ticas
+Funciones matem√°ticas
 ----------------------
 
 absoluto(int num);
-Calcula el valor absoluto de un n˙mero entero.
-Par·metros:
-  - num: El n˙mero entero para el cual se calcular· el valor absoluto.
+Calcula el valor absoluto de un n√∫mero entero.
+Par√°metros:
+  - num: El n√∫mero entero para el cual se calcular√° el valor absoluto.
 Retorna: El valor absoluto de num.
 
 
 
 contraer(int num, int num2, int num3);
 Limita un valor dentro de un rango dado.
-Par·metros:
+Par√°metros:
   - num: El valor que se desea limitar.
-  - num2: El lÌmite inferior del rango.
-  - num3: El lÌmite superior del rango.
+  - num2: El l√≠mite inferior del rango.
+  - num3: El l√≠mite superior del rango.
 Retorna: El valor de "num" limitado dentro del rango [num2, num3].
 
 
 
 mapear(int value, int desbeAbajo, int desdeArriba, int paraAbajo, int paraArriba);
 Mapea un valor desde un rango a otro.
-Par·metros:
+Par√°metros:
   - value: El valor que se desea mapear.
-  - desbeAbajo: El valor mÌnimo del rango original.
-  - desdeArriba: El valor m·ximo del rango original.
-  - paraAbajo: El valor mÌnimo del nuevo rango.
-  - paraArriba: El valor m·ximo del nuevo rango.
+  - desbeAbajo: El valor m√≠nimo del rango original.
+  - desdeArriba: El valor m√°ximo del rango original.
+  - paraAbajo: El valor m√≠nimo del nuevo rango.
+  - paraArriba: El valor m√°ximo del nuevo rango.
 Retorna: El valor "value" mapeado al nuevo rango.
 
 
 
 maximo(float a, float b);
-Obtiene el m·ximo valor entre dos n˙meros flotantes.
-Par·metros:
-  - a: El primer n˙mero.
-  - b: El segundo n˙mero.
+Obtiene el m√°ximo valor entre dos n√∫meros flotantes.
+Par√°metros:
+  - a: El primer n√∫mero.
+  - b: El segundo n√∫mero.
 Retorna: El mayor valor entre "a" y "b".
 
 
 
 minimo(float a, float b);
-Obtiene el mÌnimo valor entre dos n˙meros flotantes.
-Par·metros:
-  - a: El primer n˙mero.
-  - b: El segundo n˙mero.
+Obtiene el m√≠nimo valor entre dos n√∫meros flotantes.
+Par√°metros:
+  - a: El primer n√∫mero.
+  - b: El segundo n√∫mero.
 Retorna: El menor valor entre "a" y "b".
 
 
 
 potencia(float a, float b);
 Calcula la potencia de "a" elevado a la potencia "b".
-Par·metros:
+Par√°metros:
   - a: La base.
   - b: El exponente.
 Retorna: "a" elevado a la potencia "b".
@@ -246,40 +247,40 @@ Retorna: "a" elevado a la potencia "b".
 
 
 cuadrado(float a);
-Calcula el cuadrado de un n˙mero flotante.
-Par·metros:
-  - a: El n˙mero para el cual se calcular· el cuadrado.
+Calcula el cuadrado de un n√∫mero flotante.
+Par√°metros:
+  - a: El n√∫mero para el cual se calcular√° el cuadrado.
 Retorna: El cuadrado de "a".
 
 
 
 raiz(float a);
-Calcula la raÌz cuadrada de un n˙mero flotante.
-Par·metros:
-  - a: El n˙mero para el cual se calcular· la raÌz cuadrada.
-Retorna: La raÌz cuadrada de "a".
+Calcula la ra√≠z cuadrada de un n√∫mero flotante.
+Par√°metros:
+  - a: El n√∫mero para el cual se calcular√° la ra√≠z cuadrada.
+Retorna: La ra√≠z cuadrada de "a".
 
 
 
-Funciones relacionadas con n˙meros aleatorios
+Funciones relacionadas con n√∫meros aleatorios
 ---------------------------------------------
 
 
 iniciarAleatorio(unsigned long semilla);
-Inicializa la generaciÛn de n˙meros aleatorios con una semilla especÌfica.
-Par·metros:
-  - semilla: El valor de semilla para la generaciÛn aleatoria.
+Inicializa la generaci√≥n de n√∫meros aleatorios con una semilla espec√≠fica.
+Par√°metros:
+  - semilla: El valor de semilla para la generaci√≥n aleatoria.
 
-Nota: Esta funciÛn debe ser llamada en la funciÛn setup() para habilitar la funcion aleatorio.
+Nota: Esta funci√≥n debe ser llamada en la funci√≥n setup() para habilitar la funcion aleatorio.
 
 
 
 aleatorio(int a, int b);
-Genera un n˙mero aleatorio entre "a" y "b" (incluyendo "a" pero no "b").
-Par·metros:
-  - a: El lÌmite inferior del rango de generaciÛn.
-  - b: El lÌmite superior del rango de generaciÛn.
-Retorna: Un n˙mero aleatorio entre "a" y "b".
+Genera un n√∫mero aleatorio entre "a" y "b" (incluyendo "a" pero no "b").
+Par√°metros:
+  - a: El l√≠mite inferior del rango de generaci√≥n.
+  - b: El l√≠mite superior del rango de generaci√≥n.
+Retorna: Un n√∫mero aleatorio entre "a" y "b".
 
 
 
@@ -289,82 +290,82 @@ Funciones relacionadas con bits y bytes
 
 bitLimpiar(int x, int n);
 
-Limpia el n-Èsimo bit en un n˙mero entero.
-Par·metros:
-  - x: El n˙mero en el que se limpiar· el bit.
-  - n: La posiciÛn del bit a limpiar (0-7).
-Retorna: El n˙mero con el bit n-Èsimo limpiado.
+Limpia el n-√©simo bit en un n√∫mero entero.
+Par√°metros:
+  - x: El n√∫mero en el que se limpiar√° el bit.
+  - n: La posici√≥n del bit a limpiar (0-7).
+Retorna: El n√∫mero con el bit n-√©simo limpiado.
 
 
 
 bitL(int x, int n);
-Lee el n-Èsimo bit en un n˙mero entero.
-Par·metros:
-  - x: El n˙mero del que se leer· el bit.
-  - n: La posiciÛn del bit a leer (0-7).
-Retorna: El valor del bit n-Èsimo.
+Lee el n-√©simo bit en un n√∫mero entero.
+Par√°metros:
+  - x: El n√∫mero del que se leer√° el bit.
+  - n: La posici√≥n del bit a leer (0-7).
+Retorna: El valor del bit n-√©simo.
 
 
 
 bitC(int x, int n);
-Coloca el n-Èsimo bit en un n˙mero entero.
-Par·metros:
-  - x: El n˙mero en el que se colocar· el bit.
-  - n: La posiciÛn del bit a colocar (0-7).
-Retorna: El n˙mero con el bit n-Èsimo colocado.
+Coloca el n-√©simo bit en un n√∫mero entero.
+Par√°metros:
+  - x: El n√∫mero en el que se colocar√° el bit.
+  - n: La posici√≥n del bit a colocar (0-7).
+Retorna: El n√∫mero con el bit n-√©simo colocado.
 
 
 
 bitE(int x, int n, int y);
-Escribe un valor en el n-Èsimo bit de un n˙mero entero.
-Par·metros:
-  - x: El n˙mero en el que se escribir· el bit.
-  - n: La posiciÛn del bit a escribir (0-7).
+Escribe un valor en el n-√©simo bit de un n√∫mero entero.
+Par√°metros:
+  - x: El n√∫mero en el que se escribir√° el bit.
+  - n: La posici√≥n del bit a escribir (0-7).
   - y: El valor a escribir en el bit (0 o 1).
-Retorna: El n˙mero con el bit n-Èsimo modificado.
+Retorna: El n√∫mero con el bit n-√©simo modificado.
 
 
 
 altoByte(byte x);
 Obtiene el byte alto de un valor de 16 bits.
-Par·metros:
-  - x: El valor de 16 bits del que se obtendr· el byte alto.
+Par√°metros:
+  - x: El valor de 16 bits del que se obtendr√° el byte alto.
 Retorna: El byte alto del valor.
 
 
 
 bajoByte(byte x);
 Obtiene el byte bajo de un valor de 16 bits.
-Par·metros:
-  - x: El valor de 16 bits del que se obtendr· el byte bajo.
+Par√°metros:
+  - x: El valor de 16 bits del que se obtendr√° el byte bajo.
 Retorna: El byte bajo del valor.
 
 
 
-Funciones trigonomÈtricas
+Funciones trigonom√©tricas
 -------------------------
 
 coseno(float a);
-Calcula el coseno de un ·ngulo en radianes.
-Par·metros:
-  - a: El ·ngulo en radianes.
-Retorna: El valor del coseno del ·ngulo.
+Calcula el coseno de un √°ngulo en radianes.
+Par√°metros:
+  - a: El √°ngulo en radianes.
+Retorna: El valor del coseno del √°ngulo.
 
 
 
 seno(float a);
-Calcula el seno de un ·ngulo en radianes.
-Par·metros:
-  - a: El ·ngulo en radianes.
-Retorna: El valor del seno del ·ngulo.
+Calcula el seno de un √°ngulo en radianes.
+Par√°metros:
+  - a: El √°ngulo en radianes.
+Retorna: El valor del seno del √°ngulo.
 
 
 
 tangente(float a);
-Calcula la tangente de un ·ngulo en radianes.
-Par·metros:
-  - a: El ·ngulo en radianes.
-Retorna: El valor de la tangente del ·ngulo.
+Calcula la tangente de un √°ngulo en radianes.
+Par√°metros:
+  - a: El √°ngulo en radianes.
+Retorna: El valor de la tangente del √°ngulo.
 
 
 
@@ -372,43 +373,43 @@ Funciones relacionadas con caracteres
 -------------------------------------
 
 esAlpha(char dato);
-Verifica si un car·cter es una letra alfabÈtica.
+Verifica si un car√°cter es una letra alfab√©tica.
 
 esAlphaNum(char valor);
-Verifica si un car·cter es alfanumÈrico.
+Verifica si un car√°cter es alfanum√©rico.
 
 esAscii(char valor);
-Verifica si un car·cter es un car·cter ASCII.
+Verifica si un car√°cter es un car√°cter ASCII.
 
 esControl(char valor);
-Verifica si un car·cter es un car·cter de control.
+Verifica si un car√°cter es un car√°cter de control.
 
 esDigito(float valor);
-Verifica si un valor es un dÌgito.
+Verifica si un valor es un d√≠gito.
 
 esGraphic(char valor);
-Verifica si un car·cter es un car·cter gr·fico.
+Verifica si un car√°cter es un car√°cter gr√°fico.
 
 esHexDigit(char valor);
-Verifica si un car·cter es un dÌgito hexadecimal.
+Verifica si un car√°cter es un d√≠gito hexadecimal.
 
 esMinuscula(char valor);
-Verifica si un car·cter es una letra min˙scula.
+Verifica si un car√°cter es una letra min√∫scula.
 
 esPintable(char valor);
-Verifica si un car·cter es imprimible.
+Verifica si un car√°cter es imprimible.
 
 esPuntuacion(char valor);
-Verifica si un car·cter es un signo de puntuaciÛn.
+Verifica si un car√°cter es un signo de puntuaci√≥n.
 
 esEspacio(char valor);
-Verifica si un car·cter es un espacio.
+Verifica si un car√°cter es un espacio.
 
 esMayuscula(char valor);
-Verifica si un car·cter es una letra may˙scula.
+Verifica si un car√°cter es una letra may√∫scula.
 
 esEspacioBlanco(char valor);
-Verifica si un car·cter es un espacio en blanco.
+Verifica si un car√°cter es un espacio en blanco.
 
 
 Funciones relacionadas con interrupciones
@@ -418,4 +419,4 @@ interrumpir();
 Habilita las interrupciones. Las interrupciones son habilitadas por defecto al inicio del programa.
 
 noInterrumpir();
-Deshabilita las interrupciones. Esto evita que las interrupciones interrumpan la ejecuciÛn del programa.
+Deshabilita las interrupciones. Esto evita que las interrupciones interrumpan la ejecuci√≥n del programa.
