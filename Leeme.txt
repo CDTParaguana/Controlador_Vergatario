@@ -83,7 +83,6 @@ r7
 =========================================================================================================
 
 
-
 Funciones relacionadas con digital I/O
 --------------------------------------
 
@@ -111,8 +110,6 @@ Puertos()
 Configura todos los pines de entrada y salida del controlador para su respectivo uso
 Nota: Esta función debe ser llamada en la función setup() para habilitar
 
-
-
 Funciones relacionadas con Analog I/O
 --------------------------------------
 
@@ -133,21 +130,17 @@ Parámetros:
   - pin: El número del pin de salida analógica.
   - valor: El valor analógico a escribir (0-255).
 
-
 initSerial(int frecuencia);
 Inicializa la comunicación serial para la comunicación con el puerto serial.
 Nota: Esta función debe ser llamada en la función setup() para habilitar la comunicación serial y debe
 seleccionar una frecuencia.
 
-
 pintar();
-
 Escribe un mensaje en el SerialMonitor
 Nota: Para poder utilizarlo debe inicializar initSerial. Ademas debe estar entre comillas("") 
 el mensaje que se quiera pintar:  
 
 pintar("Hola Mundo");
-
 
 Funciones relacionadas con el tiempo
 -------------------------------------
@@ -157,14 +150,10 @@ Genera un retraso en milisegundos.
 Parámetros:
   - milisegundos: La duración del retraso en milisegundos.
 
-
-
 retrasoSe(int seconds);
 Genera un retraso en segundos.
 Parámetros:
   - seconds: La duración del retraso en segundos.
-
-
 
 retrasoMili(unsigned long valor);
 Genera un retraso en microsegundos.
@@ -184,8 +173,6 @@ Retorna el número de milisegundos desde que comenzó la ejecución del programa
 Retorna: El número de milisegundos transcurridos.
 
 
-
-
 Funciones matemáticas
 ----------------------
 
@@ -195,8 +182,6 @@ Parámetros:
   - num: El número entero para el cual se calculará el valor absoluto.
 Retorna: El valor absoluto de num.
 
-
-
 contraer(int num, int num2, int num3);
 Limita un valor dentro de un rango dado.
 Parámetros:
@@ -204,7 +189,6 @@ Parámetros:
   - num2: El límite inferior del rango.
   - num3: El límite superior del rango.
 Retorna: El valor de "num" limitado dentro del rango [num2, num3].
-
 
 
 mapear(int value, int desbeAbajo, int desdeArriba, int paraAbajo, int paraArriba);
@@ -217,16 +201,12 @@ Parámetros:
   - paraArriba: El valor máximo del nuevo rango.
 Retorna: El valor "value" mapeado al nuevo rango.
 
-
-
 maximo(float a, float b);
 Obtiene el máximo valor entre dos números flotantes.
 Parámetros:
   - a: El primer número.
   - b: El segundo número.
 Retorna: El mayor valor entre "a" y "b".
-
-
 
 minimo(float a, float b);
 Obtiene el mínimo valor entre dos números flotantes.
@@ -235,16 +215,12 @@ Parámetros:
   - b: El segundo número.
 Retorna: El menor valor entre "a" y "b".
 
-
-
 potencia(float a, float b);
 Calcula la potencia de "a" elevado a la potencia "b".
 Parámetros:
   - a: La base.
   - b: El exponente.
 Retorna: "a" elevado a la potencia "b".
-
-
 
 cuadrado(float a);
 Calcula el cuadrado de un número flotante.
@@ -253,13 +229,11 @@ Parámetros:
 Retorna: El cuadrado de "a".
 
 
-
 raiz(float a);
 Calcula la raíz cuadrada de un número flotante.
 Parámetros:
   - a: El número para el cual se calculará la raíz cuadrada.
 Retorna: La raíz cuadrada de "a".
-
 
 
 Funciones relacionadas con números aleatorios
@@ -270,7 +244,6 @@ iniciarAleatorio(unsigned long semilla);
 Inicializa la generación de números aleatorios con una semilla específica.
 Parámetros:
   - semilla: El valor de semilla para la generación aleatoria.
-
 Nota: Esta función debe ser llamada en la función setup() para habilitar la funcion aleatorio.
 
 
